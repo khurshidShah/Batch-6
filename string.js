@@ -8,3 +8,4 @@ console.log(typeof (number));
 const tochange = number.toLocaleString();
 console.log(tochange);
 console.log(typeof (tochange));
+//  slice 0r splice

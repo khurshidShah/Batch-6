@@ -17,8 +17,29 @@ console.log(typeof (detailtoString))
 console.log(detailtoString);
 // array push method
 
-const array2 = ['how are you a person'];
-const addarray2 = array2.push('guys');
-console.log(array2)
 
 
+// MAP FILTER AND REDUCE METHOD IN JS
+const number = [1, 2, 3, 4, 5, 6, 7, 8];
+const double = number.map(item => item * 2);
+console.log(double);
+console.log(number);
+const filterNumber = number.filter(item => item === 2);
+console.log(filterNumber);
+const filterNumbers = number.filter(item => item % 2 === 0);
+console.log(filterNumbers);
+
+const result = [
+    { person1: '', number: 70 },
+    { person2: '', number: 80 },
+    { person3: '', number: 90 },
+]
+const HightMatch = result.filter(person => person.number > 60);
+console.log(HightMatch);
+
+// array with reduce method
+const array7 = [1, 2, 3, 45, 6];
+const reduceNUmber = array7.reduce(function (item, result) {
+    return item + result;
+}, 0)
+console.log(reduceNUmber);
